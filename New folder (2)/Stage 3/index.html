@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Submission</title>
+  </head>
+  <body>
+
+
+
+    <div id="main">
+    <h1>Contact Enquiry</h1>
+    <form action="mailto:x22534276@student.ncirl.ie" method="post">
+    <form>
+       <input type="text" name="name" value="" placeholder="First Name"/>
+       <br> </br>
+       <input type="text" name="name" value="" placeholder="Second Name"/>
+       <br>
+       <p>Are you enquiring on behalf of an Individual or Company ?</p>
+
+         <input type="radio" name="enquiring" value="">
+           <label for="">Individual</label>
+           <br>
+           <input type="radio" name="enquiring" value="">
+            <label for="">Company</label>
+            <br> </br>
+             <input type="text" name="name" value="" placeholder="E-mail"/>
+             <br> </br>
+            <input type="text" name="name" value="" placeholder="Phone"/>
+             <br> </br>
+             <input type="text" name="name" value="" placeholder="Your location"/>
+             <p></p>
+            <p>What type of photography do you require ?</p>
+           <label for=""></label>
+           <textarea name="name" rows="3" cols="33"></textarea>
+              <br> </br>
+              <button onclick="change()">Register</button>
+	    </div>
+
+    <h1 id="unhidden"></h1>
+
+  </form>
+  <script>
+
+    function change() {
+      var x = document.getElementById("main");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+      document.getElementById("unhidden").innerHTML="Hello Thank you for the Submit!."
+
+    }
+
+
+
+    </script>
+  </body>
+</html>

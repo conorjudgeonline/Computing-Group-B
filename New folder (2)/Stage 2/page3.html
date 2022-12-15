@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Validation</title>
+  <script type="text/javascript">
+
+    function validate(){
+      //set valid to true - flag
+      var valid = true;
+      var msge = "Incomplete Form, "; //set up the message
+
+      //if statements to check data and set the message
+      if(document.getElementById("fn").value == ""){
+        msge += "You need to fill in firstname. ";
+        valid = false;
+      }
+      if(document.getElementById("sn").value == ""){
+        msge += "You need to fill in Second Name. ";
+        valid = false;
+      }
+      if(document.getElementById("tel").value == 0){
+        msge += "You need to fill in Phone. ";
+        valid = false;
+      }
+      if ((document.getElementById("r-ind").checked == false) && (document.getElementById("r-com").checked == false ) ) {
+        msge += "You need to check one. ";
+        valid = false;
+      }
+      if(!valid){  //!valid means not true. Same as valid == false
+        document.getElementById("msge1").innerHTML = msge;
+        document.getElementById("msge1").innerHTML = msge;
+      }
+      return valid;
+    }
+    </script>
+  </head>
+  <body>
+
+<h1>Hello</h1>
+
+<!-- return value of false will stop the form from being submitted -->
+<form onsubmit="return validate()">
+  firstname:<input type="text" id="fn">
+  surname: <input type="text" id="sn">
+  telephone<input type="numeric" id="tel">
+  <input type="radio" id="r-ind" value="Individual">
+  <label>Individual</label>
+  <br>
+  <input type="radio" id="r-com" value="Company">
+  <label>Company</label>
+  <input type="submit" value="Submit form">
+
+</form>
+<!-- add in another field to the form and validate it also -->
+<!-- have a input type="number" and validate -->
+<!-- try another input and type -->
+
+<p id="msge1"></p>
+  </body>
+</html>
