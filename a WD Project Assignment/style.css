@@ -1,5 +1,6 @@
 *{
   border: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
 .title{
@@ -9,7 +10,7 @@
 }
 
 .wrapper{
-  background-image: url(backgroundimage.png);
+  background-image: url(./images/backgroundimage.png);
   min-height: 94vh;
   min-width: 100%;
 }
@@ -66,11 +67,22 @@
   padding-bottom: 15px;
 }
 
-@media screen and (max-width: 375px) {
-  #imgCompNumber{
-    float: right;
+@media screen and (max-width: 376px) {
+  img{
+    width: 50px;
   }
-  #imgCompNumber2{
-    float: right
+
+@media screen and (max-width: 376px) {
+  img{
+    width: 50px;
+  }
+  h1{
+    font-size: 20px;
+  }
+  h2{
+    font-size: 20px;
+  }
+  h3{
+    font-size: 20px;
   }
 }
