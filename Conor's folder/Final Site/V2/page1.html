@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/page1.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <script type="text/javascript">
+      function changeImage1(){
+        document.getElementById("img1").hidden = true;
+        document.getElementById("txt1").hidden = false;
+      }
+      function changeTxt1(){
+        document.getElementById("img1").hidden = false;
+        document.getElementById("txt1").hidden = true;
+      }
+      function changeImage2(){
+        document.getElementById("img2").hidden = true;
+        document.getElementById("txt2").hidden = false;
+      }
+      function changeTxt2(){
+        document.getElementById("img2").hidden = false;
+        document.getElementById("txt2").hidden = true;
+      }
+      function changeImage3(){
+        document.getElementById("img3").hidden = true;
+        document.getElementById("txt3").hidden = false;
+      }
+      function changeTxt3(){
+        document.getElementById("img3").hidden = false;
+        document.getElementById("txt3").hidden = true;
+      }
+      function changeImage4(){
+        document.getElementById("img4").hidden = true;
+        document.getElementById("txt4").hidden = false;
+      }
+      function changeTxt4(){
+        document.getElementById("img4").hidden = false;
+        document.getElementById("txt4").hidden = true;
+      }
+
+    </script>
+
+    <title>Gallery V3</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--This is the nav bar-->
+      <nav class="navbar navbar-dark bg-dark">
+        <!--https://getbootstrap.com/docs/4.0/components/navbar/#containers, this is the link for ther navbar-->
+      <a class="navbar-brand" href="#"><img src="images/logo.png" width="200px"></a>
+      <!--CJ- Credit- made with https://logo.com/-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="index.html">Home</a> <!-- S.B link for Home-->
+            <a class="nav-item nav-link active" href="page1.html">Gallery<span class="sr-only">(current)</span></a><!-- S.B link for Gallery-->
+            <a class="nav-item nav-link" href="page2.html">Contact</a> <!-- S.B link for Contact-->
+            <a class="nav-item nav-link" href="page3.html">Game</a> <!-- S.B link for Game-->
+
+          </div>
+        </div>
+      </nav>
+
+<!--Place any content below this line-->
+
+<div class="container-fluid">
+
+<div class="row">
+  <div class="col-sm-12">
+    <br><br>
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col-sm-6 text-center">
+    <img id="img1"src="images/1.jpg" alt="A snowy mountainside at night" onclick="changeImage1()">
+    <!--CJ- Credit- Isaac Mitchell- https://unsplash.com/photos/1Av090tSnrY-->
+    <h3 id="txt1" onclick="changeTxt1()" hidden>A snowy mountainside at night</h3>
+    <p>Canon- E0S R5 | 16.0mm f/2.8 | 25s. | ISO 1000</p>
+    <!-- -->
+  </div>
+
+  <div class="col-sm-6 text-center">
+    <img id="img2"src="images/2.jpg" alt="A cityscape at night" onclick="changeImage2()">
+    <!--CJ- Credit- Isaac Mitchell- https://unsplash.com/photos/5hp1Hr6P8eI-->
+    <h3 id="txt2" onclick="changeTxt2()" hidden>A cityscape at night</h3>
+    <p>Canon- E0S R5 | 85.0mm f/8.0 | 6s. | ISO 100</p>
+    <!-- -->
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+
+    </div>
+
+  </div>
+  <div class="row">
+
+    <div class="col-sm-6 text-center">
+      <img id="img3"src="images/3.jpg" alt="A forest covered in smog and foggy trees" onclick="changeImage3()">
+      <!--CJ- Credit- Isaac Mitchell- https://unsplash.com/photos/MlMJfeCDMzk-->
+      <h3 id="txt3" onclick="changeTxt3()" hidden>A forest covered in smog and foggy trees</h3>
+      <p>Canon- E0S R5 | 281.0mm f/8.0 | 1/250s. | ISO 100</p>
+      <!-- -->
+      </div>
+
+      <div class="col-sm-6 text-center">
+        <img id="img4"src="images/4.jpg" alt="A forrest of trees" onclick="changeImage4()">
+        <!--CJ- Credit- Isaac Mitchell- https://unsplash.com/photos/U9W0ObKBuI0-->
+        <h3 id="txt4" onclick="changeTxt4()" hidden>A forrest of trees</h3>
+        <p>Canon- E0S R5 | 400.0mm f/8.0 | 1/125s. | ISO 800</p>
+        <!-- -->
+        </div>
+
+    </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <br><br>
+          </div>
+
+        </div>
+
+</div>
+
+</div> <!-- close wrapper-->
+
+    <div class="footer">
+      <footer>
+        <p>© 2022 Sebastien Flores, Inc</p>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
