@@ -1,0 +1,63 @@
+*{
+  border: 0;
+  font-family: 'Raleway', sans-serif;;
+}
+
+.title{
+  text-align: center;
+  background-color:  #343A40;
+  color: white;
+}
+
+.wrapper{
+  background-image: url(../images/backgroundimage.png);
+  min-height: 94vh;
+  min-width: 100%;
+}
+
+#navbarNav{
+  text-align: center;
+}
+
+.navbar {
+    position: relative;
+}
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    font-size: large;
+    display: block;
+}
+
+.content {
+  position: fixed;
+  bottom: 6%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#homePageBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #343A40;
+  color: #fff;
+  cursor: pointer;
+}
+
+#homePageBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+.footer{
+  text-align: center;
+  background-color:  #343A40;
+  min-width: 100%;
+  min-height: 6vh;
+  color: white;
+}
