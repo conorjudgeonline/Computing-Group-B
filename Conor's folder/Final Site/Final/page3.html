@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- SB- link for bootstrap stylesheet-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <!-- SB- link for google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <!-- PP-  link for second google fonts-->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- PP- link to stylesheet-->
+  <script defer src="js/external.js" charset="utf-8"></script>
+  <!-- PP- for external js-->
+</head>
+<body>
+  <div class="wrapper">
+    <!-- SB- This is the code for the nav bar-->
+    <nav class="navbar navbar-dark bg-dark">
+      <!--https://getbootstrap.com/docs/4.0/components/navbar/#containers, this is the link for ther navbar-->
+      <a class="navbar-brand"><img src="images/logo.png" alt="logo image of Sabastien Flores- Photographer" width="200px"></a>
+      <!--CJ- Credit- made with https://logo.com/-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <!--SB- This is the toggle button for the nav bar-->
+        <span class="navbar-toggler-icon"></span>
+        <!--SB- This is the icon for the toggler-->
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="index.html">Home</a>
+          <!-- SB- link for Home-->
+          <a class="nav-item nav-link" href="page1.html">Gallery</a>
+          <!-- SB- link for Gallery-->
+          <a class="nav-item nav-link" href="page2.html">Contact</a>
+          <!-- SB- link for Contact-->
+          <a class="nav-item nav-link active" href="page3.html">Game<span class="sr-only">(current)</span></a>
+          <!-- SB- link for Game-->
+        </div>
+      </div>
+    </nav>
+    <div id="quizGame">
+      <h1 class="headerOneGame">Game</h1>
+      <img id="imgGame" src="images/0.png" alt="Question Mark" width="100px">
+      <!-- PP- taken from https://pixabay.com/vectors/dice-games-game-six-sided-face-26772/ -->
+      <br>
+      <br>
+      <h2 class="headerTwoGame">What sign is this?</h2>
+      <div id="answerOne">
+        <!-- PP- radio buttons for question One -->
+        <!-- PP- value 1 being the correct answer -->
+        <input type="radio" name="Number" value="1">
+        <label class="labelGame" for="">Question Mark?</label>
+        <br>
+        <input type="radio" name="Number" value="0">
+        <label class="labelGame" for="">Number 1</label>
+        <br>
+        <input type="radio" name="Number" value="0">
+        <label class="labelGame" for="">Number 2</label>
+        <br>
+        <input type="radio" name="Number" value="0">
+        <label class="labelGame" for="">Number 3</label>
+        <br>
+      </div>
+      <!-- PP- empty h3 for inputting messages -->
+      <h3 id="correctOrIn"></h3>
+      <!-- PP- button to activate function in jQuery -->
+      <button id="btn" type="button" name="button">Go!</button>
+      <hr>
+      <img id="imgGame" src="images/1.png" alt="Number One" width="100px">
+      <!-- PP- taken from https://pixabay.com/vectors/dice-games-game-six-sided-face-26772/ -->
+      <br>
+      <br>
+      <h2 class="headerTwoGame">What number is this?</h2>
+      <div id="answerTwo">
+        <!-- PP- radio buttons for question Two -->
+        <!-- PP- value 1 being the correct answer -->
+        <input type="radio" name="NumberTwo" value="0">
+        <label class="labelGame" for="">Question Mark?</label>
+        <br>
+        <input type="radio" name="NumberTwo" value="1">
+        <label class="labelGame" for="">Number 1</label>
+        <br>
+        <input type="radio" name="NumberTwo" value="0">
+        <label class="labelGame" for="">Number 2</label>
+        <br>
+        <input type="radio" name="NumberTwo" value="0">
+        <label class="labelGame" for="">Number 3</label>
+        <br>
+      </div>
+      <!-- PP- empty h3 for inputting messages -->
+      <h3 id="correctOrInTwo"></h3>
+      <!-- PP- button to activate function in jQuery -->
+      <button id="btnTwo" type="button" name="button">Go!</button>
+      <hr>
+      <img id="imgGame" src="images/2.png" alt="Number Two" width="100px">
+      <!-- PP- taken from https://pixabay.com/vectors/dice-games-game-six-sided-face-26772/ -->
+      <br>
+      <br>
+      <h2 class="headerTwoGame">What number is this?</h2>
+      <div id="answerThree">
+        <!-- PP- radio buttons for question Three -->
+        <!-- PP- value 1 being the correct answer -->
+        <input type="radio" name="NumberThree" value="0">
+        <label class="labelGame" for="">Question Mark?</label>
+        <br>
+        <input type="radio" name="NumberThree" value="0">
+        <label class="labelGame" for="">Number 1</label>
+        <br>
+        <input type="radio" name="NumberThree" value="1">
+        <label class="labelGame" for="">Number 2</label>
+        <br>
+        <input type="radio" name="NumberThree" value="0">
+        <label class="labelGame" for="">Number 3</label>
+        <br>
+      </div>
+      <!-- PP- empty h3 for inputting messages -->
+      <h3 id="correctOrInThree"></h3>
+      <!-- PP- button to activate function in jQuery -->
+      <button id="btnThree" type="button" name="button">Go!</button>
+      <hr>
+      <img id="imgGame" src="images/3.png" alt="Number Three" width="100px">
+      <!-- PP- taken from https://pixabay.com/vectors/dice-games-game-six-sided-face-26772/ -->
+      <br>
+      <br>
+      <h2 class="headerTwoGame">What number is this?</h2>
+      <div id="answerFour">
+        <!-- PP- radio buttons for question Four -->
+        <!-- PP- value 1 being the correct answer -->
+        <input type="radio" name="NumberFour" value="0">
+        <label class="labelGame" for="">Question Mark?</label>
+        <br>
+        <input type="radio" name="NumberFour" value="0">
+        <label class="labelGame" for="">Number 1</label>
+        <br>
+        <input type="radio" name="NumberFour" value="0">
+        <label class="labelGame" for="">Number 2</label>
+        <br>
+        <input type="radio" name="NumberFour" value="1">
+        <label class="labelGame" for="">Number 3</label>
+        <br>
+      </div>
+      <!-- PP- empty h3 for inputting messages -->
+      <h3 id="correctOrInFour"></h3>
+      <!-- PP- button to activate function in jQuery -->
+      <button id="btnFour" type="button" name="button">Go!</button>
+      <hr>
+
+      <img id="imgGame" src="images/4.png" alt="Number Four" width="100px">
+      <!-- PP- taken from https://pixabay.com/vectors/dice-games-game-six-sided-face-26772/ -->
+      <br>
+      <br>
+      <h2 class="headerTwoGame">What number is this?</h2>
+      <div id="answerFive">
+        <!-- PP- radio buttons for question Five -->
+        <!-- PP- value 1 being the correct answer -->
+        <input type="radio" name="NumberFive" value="0">
+        <label class="labelGame" for="">Number 3</label>
+        <br>
+        <input type="radio" name="NumberFive" value="1">
+        <label class="labelGame" for="">Number 4</label>
+        <br>
+        <input type="radio" name="NumberFive" value="0">
+        <label class="labelGame" for="">Number 5</label>
+        <br>
+        <input type="radio" name="NumberFive" value="0">
+        <label class="labelGame" for="">Number 6</label>
+        <br>
+      </div>
+      <!-- PP- empty h3 for inputting messages -->
+      <h3 id="correctOrInFive"></h3>
+      <!-- PP- button to activate function in jQuery -->
+      <button id="btnFive" type="button" name="button">Go!</button>
+      <hr>
+
+      <img id="imgGame" src="images/5.png" alt="Number Five" width="100px">
+      <!-- PP- taken from https://pixabay.com/vectors/dice-games-game-six-sided-face-26772/ -->
+      <br>
+      <br>
+      <h2 class="headerTwoGame">What number is this?</h2>
+      <div id="answerSix">
+        <!-- PP- radio buttons for question Six -->
+        <!-- PP- value 1 being the correct answer -->
+        <input type="radio" name="NumberSix" value="0">
+        <label class="labelGame" for="">Question Mark?</label>
+        <br>
+        <input type="radio" name="NumberSix" value="1">
+        <label class="labelGame" for="">Number 5</label>
+        <br>
+        <input type="radio" name="NumberSix" value="0">
+        <label class="labelGame" for="">Number 6</label>
+        <br>
+        <input type="radio" name="NumberSix" value="0">
+        <label class="labelGame" for="">Number 7</label>
+        <br>
+      </div>
+      <!-- PP- empty h3 for inputting messages -->
+      <h3 id="correctOrInSix"></h3>
+      <!-- PP- button to activate function in jQuery -->
+      <button id="btnSix" type="button" name="button">Go!</button>
+      <hr>
+
+      <img id="imgGame" src="images/6.png" alt="Number Six" width="100px">
+      <!-- PP- taken from https://pixabay.com/vectors/dice-games-game-six-sided-face-26772/ -->
+      <br>
+      <br>
+      <h2 class="headerTwoGame">What number is this?</h2>
+      <div id="answerSeven">
+        <!-- PP- radio buttons for question Seven -->
+        <!-- PP- value 1 being the correct answer -->
+        <input type="radio" name="NumberSeven" value="0">
+        <label class="labelGame" for="">Question Mark?</label>
+        <br>
+        <input type="radio" name="NumberSeven" value="0">
+        <label class="labelGame" for="">Number 4</label>
+        <br>
+        <input type="radio" name="NumberSeven" value="0">
+        <label class="labelGame" for="">Number 5</label>
+        <br>
+        <input type="radio" name="NumberSeven" value="1">
+        <label class="labelGame" for="">Number 6</label>
+        <br>
+      </div>
+      <!-- PP- empty h3 for inputting messages -->
+      <h3 id="correctOrInSeven"></h3>
+      <!-- PP- button to activate function in jQuery -->
+      <button id="btnSeven" type="button" name="button">Go!</button>
+      <hr>
+
+      <div id="mainGame">
+        <h4 id="userName">You</h4>
+        <!-- PP- displays question mark picture -->
+        <img id="imgPlayer" src="images/0.png" alt="Question Mark" width="100px">
+        <!-- PP- taken from https://pixabay.com/vectors/dice-games-game-six-sided-face-26772/ -->
+        <img id="imgPlayer2" src="images/0.png" alt="Question Mark" width="100px">
+        <!-- PP- taken from https://pixabay.com/vectors/dice-games-game-six-sided-face-26772/ -->
+        <hr>
+        <h4 id="userName">Computer</h3>
+        <!-- PP- displays question mark picture -->
+        <img id="imgCompNumber" src="images/0.png" alt="Question Mark" width="100px">
+        <!-- PP- taken from https://pixabay.com/vectors/dice-games-game-six-sided-face-26772/ -->
+        <img id="imgCompNumber2" src="images/0.png" alt="Question Mark" width="100px">
+        <!-- PP- taken from https://pixabay.com/vectors/dice-games-game-six-sided-face-26772/ -->
+        <hr>
+        <h1 id="message">Good Luck!</h1>
+        <br>
+        <!-- PP- buttons to activate functions -->
+        <button id="buttonGame" type="button" name="button">Click to play!</button>
+        <!-- PP- disabled button -->
+        <button id="buttonGame2" type="button" name="button" disabled>Go Again</button>
+        <br>
+        <br>
+        <!-- PP- button to restart game -->
+        <button id="buttonReset" type="button" name="button">Restart</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <footer>
+      <p>© 2022 Sebastien Flores, Inc</p>
+      <!-- SB- this is the footer-->
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- SB- js for bootstrap-->
+</body>
+</html>

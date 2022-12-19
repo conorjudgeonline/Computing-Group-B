@@ -1,0 +1,121 @@
+*{
+  border: 0;
+  font-family: 'Raleway', sans-serif;
+}
+.title{
+  text-align: center;
+  background-color:  #343A40;
+  color: white;
+}
+.wrapper{
+  background-image: url(../images/backgroundimage.png);
+  min-height: 94vh;
+  min-width: 100%;
+}
+#navbarNav{
+  text-align: center;
+}
+.navbar {
+    position: relative;
+}
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    font-size: large;
+    display: block;
+}
+.content {
+  position: fixed;
+  bottom: 6%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+#homePageBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #343A40;
+  color: #fff;
+  cursor: pointer;
+}
+#homePageBtn:hover {
+  background: #ddd;
+  color: black;
+}
+.footer{
+  text-align: center;
+  background-color:  #343A40;
+  min-width: 100%;
+  min-height: 6vh;
+  color: white;
+}
+/* page1 */
+#img1:hover{
+  /* CJ- image expands 10% when mouse hovers over */
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+#img2:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+#img3:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+#img4:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+/* page2 */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+#main {
+  text-align: center;
+}
+#formbutton {
+  background-color: #343A40;
+  color: white;
+}
+#pic{
+  position:absolute;
+  top: 100px;
+  right: 100px;
+}
+ #unhidden{
+   text-align: center;
+ }
+ /* page3 */
+ #quizGame{
+   text-align: center;
+   padding-bottom: 15px;
+ }
+ /* PP- font for page 3 */
+ .headerOneGame, .headerTwoGame,
+ #correctOrIn, #correctOrInTwo, #correctOrInThree, #correctOrInFour,
+ #correctOrInFive, #correctOrInSix, #correctOrInSeven,
+ #message, #userName, .labelGame,
+ #buttonGame, #buttonGame2, #buttonReset,
+ #btn, #btnTwo, #btnThree, #btnFour, #btnFive, #btnSix, #btnSeven{
+   font-family: 'Indie Flower', cursive;
+   font-size: xx-large;
+ }
